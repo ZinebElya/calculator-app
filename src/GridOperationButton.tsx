@@ -7,7 +7,7 @@ interface GridOperationButtonProps {
 }
 
 const Button = styled(MuiButton)<{ selected: boolean }>((props) => ({
-  borderColor: props.selected ? "#fff" : "rgba(255, 241, 73, 0.5)",
+  borderColor: props.selected ? "#bf4" : "rgba(149, 73, 255, 0.5)",
 }));
 
 export const GridOperationButton: React.FC<GridOperationButtonProps> = ({
@@ -20,7 +20,7 @@ export const GridOperationButton: React.FC<GridOperationButtonProps> = ({
       <Button
         fullWidth
         variant="outlined"
-        sx={{ backgroundColor: "rgb(254,241,73,.1)" }}
+        sx={{ backgroundColor: "rgb(147,73,255,.1)" }}
         onClick={() => selectOperation(operation)}
         selected={selectedOperation === operation}
       >

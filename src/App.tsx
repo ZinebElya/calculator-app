@@ -8,14 +8,18 @@ const OutputContainer = styled(`div`)(({ theme }) => ({
   textAlign: "right",
   height: "2em",
   padding: theme.spacing(2),
-  fontSize: "3em",
+  fontSize: "4em",
   overflow: "hidden",
+  color: "#691796"
 }));
 
 const CalculatorBase = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(2),
   marginTop: theme.spacing(4),
-  borderRadius: 15,
+  borderRadius: 30,
+  boxShadow: theme.shadows[24],
+  
+  
 }));
 
 function App() {
